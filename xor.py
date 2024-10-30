@@ -34,7 +34,7 @@ def xor_encode(input_string, hex_key):
     # Base64 encode
     xor_b64_encode = base64.b64encode(xor_result)
 
-    # Convert the result to a string using 'latin1' encoding to keep all byte values
+    # Convert the result to a string using 'utf-8' encoding to keep all byte values
     xor_result_string = xor_b64_encode.decode('utf-8')
 
     return xor_result_string
